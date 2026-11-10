@@ -48,72 +48,175 @@
             </ul>
         </nav>
     </header>
-    <main id="main" class="max-w-6xl mx-auto px-4 sm:px-8 pb-12">
-        <nav class="text-sm pt-5" aria-label="Camí de navegació">
-            <ol class="flex gap-2">
-                <li><a class="text-link underline focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap"
-                        href="index.html">Inici</a></li>
-                <li aria-hidden="true">/</li>
-                <li aria-current="page">Reserves</li>
-            </ol>
-        </nav>
-        <div class="max-w-2xl">
-            <h1 class="font-sans font-extrabold text-4xl md:text-6xl tracking-tight leading-tight mb-4 pt-8">Reserva
-                taula a Quatre Fogons</h1>
-            <p class="text-xl max-w-2xl mb-6">Omple el formulari i et confirmarem la reserva per correu electrònic.</p>
-            <form class="grid gap-4 max-w-lg" action="mailto:reserves@quatrefogons.cat" method="post"
+    
+<main id="main" class="max-w-7xl mx-auto px-4 sm:px-8 pb-12">
+
+    <!-- CAMINO DE NAVEGACIÓN -->
+    <nav class="text-sm pt-5 mb-6" aria-label="Camí de navegació">
+        <ol class="flex gap-2">
+            <li>
+                <a class="text-link underline" href="index.html">Inici</a>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">Reserves</li>
+        </ol>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL: IZQUIERDA Y DERECHA -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+
+        <!-- COLUMNA IZQUIERDA: FORMULARIO -->
+        <section class="max-w-2xl">
+
+            <h1 class="font-sans font-extrabold text-4xl md:text-6xl tracking-tight leading-tight mb-4 pt-4">
+                Reserva taula a Quatre Fogons
+            </h1>
+
+            <p class="text-xl max-w-2xl mb-6">
+                Omple el formulari i et confirmarem la reserva per correu electrònic.
+            </p>
+
+            <form class="grid gap-4 max-w-lg"
+                action="mailto:reserves@quatrefogons.cat"
+                method="post"
                 enctype="text/plain">
-                <div><label class="block font-semibold mb-1" for="nom">Nom</label><input
-                        class="w-full border-2 border-ink rounded p-3 bg-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap"
-                        id="nom" name="nom" type="text" autocomplete="name" required></div>
-                <div><label class="block font-semibold mb-1" for="email">Correu electrònic</label><input
-                        class="w-full border-2 border-ink rounded p-3 bg-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap"
-                        id="email" name="email" type="email" autocomplete="email" required></div>
-                <div><label class="block font-semibold mb-1" for="data">Data</label><input
-                        class="w-full border-2 border-ink rounded p-3 bg-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap"
-                        id="data" name="data" type="date" required></div>
-                <div><label class="block font-semibold mb-1" for="hora">Hora</label><select
-                        class="w-full border-2 border-ink rounded p-3 bg-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap"
+
+                <div>
+                    <label class="block font-semibold mb-1" for="nom">Nom</label>
+                    <input class="w-full border-2 border-ink rounded p-3 bg-white"
+                        id="nom" name="nom" type="text"
+                        autocomplete="name" required>
+                </div>
+
+                <div>
+                    <label class="block font-semibold mb-1" for="email">Correu electrònic</label>
+                    <input class="w-full border-2 border-ink rounded p-3 bg-white"
+                        id="email" name="email" type="email"
+                        autocomplete="email" required>
+                </div>
+
+                <div>
+                    <label class="block font-semibold mb-1" for="data">Data</label>
+                    <input class="w-full border-2 border-ink rounded p-3 bg-white"
+                        id="data" name="data" type="date" required>
+                </div>
+
+                <div>
+                    <label class="block font-semibold mb-1" for="hora">Hora</label>
+                    <select class="w-full border-2 border-ink rounded p-3 bg-white"
                         id="hora" name="hora">
                         <option>13:30</option>
                         <option>14:30</option>
                         <option>20:30</option>
                         <option>21:30</option>
-                    </select></div>
-                <div><label class="block font-semibold mb-1" for="pers">Nombre de persones</label><input
-                        class="w-full border-2 border-ink rounded p-3 bg-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap"
-                        id="pers" name="persones" type="number" min="1" max="8" value="2" required></div>
-                <div><label class="block font-semibold mb-1" for="com">Comentaris (al·lèrgies, cadira de
-                        nadó…)</label><textarea
-                        class="w-full border-2 border-ink rounded p-3 bg-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap"
-                        id="com" name="comentaris" rows="3"></textarea></div>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block font-semibold mb-1" for="pers">Nombre de persones</label>
+                    <input class="w-full border-2 border-ink rounded p-3 bg-white"
+                        id="pers" name="persones" type="number"
+                        min="1" max="8" value="2" required>
+                </div>
+
+                <div>
+                    <label class="block font-semibold mb-1" for="com">
+                        Comentaris (al·lèrgies, cadira de nadó…)
+                    </label>
+                    <textarea class="w-full border-2 border-ink rounded p-3 bg-white"
+                        id="com" name="comentaris" rows="3"></textarea>
+                </div>
+
                 <button
-                    class="inline-block bg-ink text-white font-sans font-bold px-6 py-3 rounded hover:bg-cat focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap justify-self-start cursor-pointer"
-                    type="submit">Envia la reserva</button>
+                    class="inline-block bg-ink text-white font-sans font-bold px-6 py-3 rounded hover:bg-cat justify-self-start cursor-pointer"
+                    type="submit">
+                    Envia la reserva
+                </button>
             </form>
-            <h2 class="font-sans font-bold text-2xl md:text-3xl mt-10 mb-3">Preguntes freqüents</h2>
+
+            <!-- PREGUNTES FREQÜENTS -->
+            <h2 class="font-sans font-bold text-2xl md:text-3xl mt-10 mb-3">
+                Preguntes freqüents
+            </h2>
+
             <details class="border-t border-line py-3">
-                <summary
-                    class="font-bold cursor-pointer focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap">
-                    Cal reservar?</summary>
-                <p class="mt-2">Recomanem reservar els caps de setmana. Els dies feiners també hi ha taules sense
-                    reserva.</p>
+                <summary class="font-bold cursor-pointer">
+                    Cal reservar?
+                </summary>
+                <p class="mt-2">
+                    Recomanem reservar els caps de setmana. Els dies feiners també hi ha taules sense reserva.
+                </p>
             </details>
+
             <details class="border-t border-line py-3">
-                <summary
-                    class="font-bold cursor-pointer focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap">
-                    Teniu opcions vegetarianes?</summary>
-                <p class="mt-2">Sí. Gairebé tots els entrants tenen versió vegetariana i el hummus d’escalivada ho és
-                    per defecte.</p>
+                <summary class="font-bold cursor-pointer">
+                    Teniu opcions vegetarianes?
+                </summary>
+                <p class="mt-2">
+                    Sí. Gairebé tots els entrants tenen versió vegetariana i el hummus d’escalivada ho és per defecte.
+                </p>
             </details>
+
             <details class="border-t border-line py-3">
-                <summary
-                    class="font-bold cursor-pointer focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap">
-                    Es poden fer reserves de grup?</summary>
-                <p class="mt-2">Sí, per a grups de més de 8 persones escriu-nos a reserves@quatrefogons.cat.</p>
+                <summary class="font-bold cursor-pointer">
+                    Es poden fer reserves de grup?
+                </summary>
+                <p class="mt-2">
+                    Sí, per a grups de més de 8 persones escriu-nos a reserves@quatrefogons.cat.
+                </p>
             </details>
-        </div>
-    </main>
+
+        </section>
+
+
+        <!-- COLUMNA DRETA: IMATGES DELS PLATS -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-5 content-start lg:pt-8">
+
+            <!-- IMATGE 1 -->
+            <div class="overflow-hidden rounded-2xl shadow-md">
+                <img src="./Img/Catalunya_típic.png"
+                    alt="Plat típic de Catalunya"
+                    class="w-full h-64 object-cover">
+                <p class="font-sans font-bold text-xl p-3 bg-white">
+                    Cuina catalana
+                </p>
+            </div>
+
+            <!-- IMATGE 2 -->
+            <div class="overflow-hidden rounded-2xl shadow-md">
+                <img src="./Img/Marruecos_típic.png"
+                    alt="Plat típic del Marroc"
+                    class="w-full h-64 object-cover">
+                <p class="font-sans font-bold text-xl p-3 bg-white">
+                    Cuina marroquina
+                </p>
+            </div>
+
+            <!-- IMATGE 3 -->
+            <div class="overflow-hidden rounded-2xl shadow-md">
+                <img src="./Img/tamales.png"
+                    alt="Plat típic de Mèxic"
+                    class="w-full h-64 object-cover">
+                <p class="font-sans font-bold text-xl p-3 bg-white">
+                    Cuina mexicana
+                </p>
+            </div>
+
+            <!-- IMATGE 4 -->
+            <div class="overflow-hidden rounded-2xl shadow-md">
+                <img src="./Img/sushi.png "
+                    alt="Plat típic del Japó"
+                    class="w-full h-64 object-cover">
+                <p class="font-sans font-bold text-xl p-3 bg-white">
+                    Cuina japonesa
+                </p>
+            </div>
+
+        </section>
+
+    </div>
+</main>
+
     <footer class="border-t border-line px-4 sm:px-8 py-6 text-base">
         <p><strong>Quatre Fogons</strong> · Carrer del Mar, 12, Barcelona · <a
                 class="text-link underline focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap"
