@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -21,82 +20,95 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inici","item":"https://www.quatrefogons.cat/"},{"@type":"ListItem","position":2,"name":"Contacte","item":"https://www.quatrefogons.cat/contacte.html"}]}</script>
 </head>
 
-<body class="bg-paper text-ink font-serif text-lg leading-relaxed">
+<body class="bg-paper text-ink font-serif text-lg leading-relaxed antialiased">
     <a class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:bg-ink focus:text-white focus:p-3 focus:z-50" href="#main">Salta al contingut</a>
 
-    <header class="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 px-4 sm:px-8 py-4 border-b border-line">
-        <a class="font-sans font-extrabold text-2xl focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="index.html">Quatre Fogons</a>
-        <nav aria-label="Menú principal">
-            <ul class="flex flex-wrap gap-x-5">
-                <li><a class="inline-block py-2 font-sans font-semibold border-b-4 hover:border-cat border-transparent focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="index.html">Inici</a></li>
-                <li><a class="inline-block py-2 font-sans font-semibold border-b-4 hover:border-cat border-transparent focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="carta.html">La carta</a></li>
-                <li><a class="inline-block py-2 font-sans font-semibold border-b-4 hover:border-cat border-transparent focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="cuines.html">Les quatre cuines</a></li>
-                <li><a class="inline-block py-2 font-sans font-semibold border-b-4 hover:border-cat border-transparent focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="reserves.html">Reserves</a></li>
-                <li><a class="inline-block py-2 font-sans font-semibold border-b-4 hover:border-cat border-cat focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="contacte.html" aria-current="page">Contacte</a></li>
-            </ul>
-        </nav>
+    <header class="border-b border-line bg-white">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-x-8 gap-y-3 px-4 sm:px-8 py-4">
+            <a class="font-sans font-extrabold text-2xl tracking-tight focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="index.html">Quatre Fogons</a>
+            <nav aria-label="Menú principal">
+                <ul class="flex flex-wrap gap-x-6">
+                    <li><a class="inline-block py-2 font-sans font-semibold border-b-2 hover:border-cat border-transparent transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="index.html">Inici</a></li>
+                    <li><a class="inline-block py-2 font-sans font-semibold border-b-2 hover:border-cat border-transparent transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="carta.html">La carta</a></li>
+                    <li><a class="inline-block py-2 font-sans font-semibold border-b-2 hover:border-cat border-transparent transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="cuines.html">Les quatre cuines</a></li>
+                    <li><a class="inline-block py-2 font-sans font-semibold border-b-2 hover:border-cat border-transparent transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="reserves.html">Reserves</a></li>
+                    <li><a class="inline-block py-2 font-sans font-semibold border-b-2 hover:border-cat border-cat focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="contacte.html" aria-current="page">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main id="main" class="max-w-6xl mx-auto px-4 sm:px-8 pb-12">
-        <nav class="text-sm pt-5" aria-label="Camí de navegació">
-            <ol class="flex gap-2">
-                <li><a class="text-link underline focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="index.html">Inici</a></li>
+    <main id="main" class="max-w-6xl mx-auto px-4 sm:px-8 pb-16">
+        <nav class="text-sm pt-6" aria-label="Camí de navegació">
+            <ol class="flex gap-2 text-ink">
+                <li><a class="text-link underline hover:text-cat transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="index.html">Inici</a></li>
                 <li aria-hidden="true">/</li>
                 <li aria-current="page">Contacte</li>
             </ol>
         </nav>
 
-        <div class="flex flex-col md:flex-row gap-6 items-start pt-8">
-            <div class="flex-1 min-w-0">
-                <h1 class="font-sans font-extrabold text-4xl md:text-6xl tracking-tight leading-tight mb-4">On som i com arribar</h1>
-                <p class="text-xl max-w-2xl mb-6">Som al barri del Born, a cinc minuts a peu de la parada de metro Jaume I.</p>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-stretch pt-8">
+            <div class="md:col-span-6 flex flex-col justify-between bg-white border border-line p-8 sm:p-10 shadow-sm">
+                <div>
+                    <h1 class="font-sans font-extrabold text-4xl md:text-5xl tracking-tight leading-tight mb-4">On som i com arribar</h1>
+                    <p class="text-lg text-ink mb-6">Som al barri del Born, a cinc minuts a peu de la parada de metro Jaume I.</p>
 
-                <address class="not-italic mb-6"><strong>Quatre Fogons</strong><br>Carrer del Mar, 12<br>08003 Barcelona<br>Telèfon: <a class="text-link underline focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="tel:+34930000000">930 000 000</a><br>Correu: <a class="text-link underline focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="mailto:reserves@quatrefogons.cat">reserves@quatrefogons.cat</a></address>
+                    <address class="not-italic border-l-2 border-cat pl-4 mb-8 text-base space-y-1">
+                        <strong class="font-sans text-lg block">Quatre Fogons</strong>
+                        <span>Carrer del Mar, 12 · 08003 Barcelona</span><br>
+                        <span>Telèfon: <a class="text-link underline hover:text-cat transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="tel:+34930000000">930 000 000</a></span><br>
+                        <span>Correu: <a class="text-link underline hover:text-cat transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="mailto:reserves@quatrefogons.cat">reserves@quatrefogons.cat</a></span>
+                    </address>
 
-                <h2 class="font-sans font-bold text-2xl md:text-3xl mt-10 mb-3">Horaris</h2>
-                <table class="w-full border-collapse mb-8">
-                    <caption class="text-left font-bold pb-2">Horaris d’obertura</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col" class="text-left p-2 border-b border-line">Dia</th>
-                            <th scope="col" class="text-left p-2 border-b border-line">Dinar</th>
-                            <th scope="col" class="text-left p-2 border-b border-line">Sopar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" class="text-left p-2 border-b border-line">Dilluns</th>
-                            <td class="text-left p-2 border-b border-line" colspan="2">Tancat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="text-left p-2 border-b border-line">Dimarts i dimecres</th>
-                            <td class="text-left p-2 border-b border-line">13:00–16:00</td>
-                            <td class="text-left p-2 border-b border-line">Tancat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="text-left p-2 border-b border-line">Dijous a dissabte</th>
-                            <td class="text-left p-2 border-b border-line">13:00–16:00</td>
-                            <td class="text-left p-2 border-b border-line">20:00–23:30</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="text-left p-2 border-b border-line">Diumenge</th>
-                            <td class="text-left p-2 border-b border-line">13:00–16:00</td>
-                            <td class="text-left p-2 border-b border-line">Tancat</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <h2 class="font-sans font-bold text-xl uppercase tracking-wider text-ink mb-3">Horaris</h2>
+                    <table class="w-full border-collapse border border-line text-base mb-8">
+                        <caption class="sr-only">Horaris d’obertura</caption>
+                        <thead class="bg-paper">
+                            <tr>
+                                <th scope="col" class="text-left font-sans font-bold p-3 border-b border-line">Dia</th>
+                                <th scope="col" class="text-left font-sans font-bold p-3 border-b border-line">Dinar</th>
+                                <th scope="col" class="text-left font-sans font-bold p-3 border-b border-line">Sopar</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-line">
+                            <tr>
+                                <th scope="row" class="text-left font-normal p-3">Dilluns</th>
+                                <td class="text-left p-3 text-ink" colspan="2">Tancat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-left font-normal p-3">Dimarts i dimecres</th>
+                                <td class="text-left p-3">13:00–16:00</td>
+                                <td class="text-left p-3 text-ink">Tancat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-left font-normal p-3">Dijous a dissabte</th>
+                                <td class="text-left p-3">13:00–16:00</td>
+                                <td class="text-left p-3">20:00–23:30</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-left font-normal p-3">Diumenge</th>
+                                <td class="text-left p-3">13:00–16:00</td>
+                                <td class="text-left p-3 text-ink">Tancat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <a class="inline-block bg-ink text-white font-sans font-bold px-6 py-3 rounded hover:bg-cat focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="reserves.html">Reserva taula</a>
+                <div>
+                    <a class="inline-block w-full sm:w-auto text-center bg-ink text-white font-sans font-bold tracking-wide px-8 py-3.5 hover:bg-cat transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="reserves.html">Reserva taula</a>
+                </div>
             </div>
 
-            <div class="flex-1 min-w-0">
-                <img src="IMG/Contacte.webp" alt="Contacte Quatre Fogons" class="w-full h-auto rounded-lg">
+            <div class="md:col-span-6 border border-line bg-white p-2 shadow-sm">
+                <img src="IMG/Contacte.webp" alt="Contacte Quatre Fogons" class="w-full h-full object-cover aspect-[4/5] md:aspect-auto">
             </div>
         </div>
     </main>
 
-    <footer class="border-t border-line px-4 sm:px-8 py-6 text-base">
-        <p><strong>Quatre Fogons</strong> · Carrer del Mar, 12, Barcelona · <a class="text-link underline focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="tel:+34930000000">930 000 000</a> · <a class="text-link underline focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="mailto:reserves@quatrefogons.cat">reserves@quatrefogons.cat</a></p>
+    <footer class="border-t border-line bg-white text-base">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8 py-6">
+            <p><strong>Quatre Fogons</strong> · Carrer del Mar, 12, Barcelona · <a class="text-link underline hover:text-cat transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="tel:+34930000000">930 000 000</a> · <a class="text-link underline hover:text-cat transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-jap" href="mailto:reserves@quatrefogons.cat">reserves@quatrefogons.cat</a></p>
+        </div>
     </footer>
 </body>
 </html>
